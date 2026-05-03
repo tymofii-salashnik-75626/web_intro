@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  margin: 0;
+  padding: 40px;  
+  color: #333;
+  background: red; 
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+section {
+  background: gray;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px black dotted;
+}
+
+section h2 {
+  text-align: center;
+}
+
+
+.contact-section {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box; 
+  margin-top: 5px;
+}
+
+
+.submit-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: black; 
+  color: white;
+  
+}
+
+#local-projects-list li {
+  padding: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+
+.usuwanie {
+  color: red; 
+  cursor: pointer; 
+  border: none; 
+  background: none;
+}
+
+
+
+
+
