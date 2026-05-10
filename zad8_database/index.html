@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>CV Tymofii Salashnik</title>
+
+  <link id="theme-link" rel="stylesheet" href="red.css">
+  <!-- <link rel="stylesheet" href="green.css"> -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div style="margin: 20px; text-align: center;">
+    <button id="theme-switcher" onclick="toggleTheme()">Zmiana motywa</button>
+    <button id="section-toggler" onclick="toggleSection()">Ukryj Projekty</button>
+  </div>
+
+  <header>
+    <h1>Tymofii Salashnik</h1>
+    <img src="my_photo.jpg" width="200" alt="Moje zdjęcie" />
+  </header>
+  
+  <main>
+    <section>
+      <h2>Kontakt</h2>
+      <ul>
+        <li><b>Miasto:</b> Warszawa</li>
+        <li><b>E-mail:</b> <a href="mailto:tsalash1@stu.vistula.edu.pl">tsalash1@stu.vistula.edu.pl</a></li>
+        <li><b>Tel:</b> <a href="tel:+48 730 579 936">+48 730 579 936</a></li>
+        <li><b>GitHub:</b> <a href="https://github.com/tymofii-salashnik-75626" target="_blank" rel="noopener noreferrer">tymofii-salashnik-75626</a></li>
+        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/tymofii-salashnik-1209663b8/" target="_blank" rel="noopener noreferrer" >Tymofii Salashnik</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>O mnie</h2>
+      <p>Urodziłem się 25.07.2007 w Ukrainie, w mieście Makeevka</p>
+      <p>Student Akademii Finansów i Biznesu Vistula. Kierunek: Informatyka</p>
+      <p>Mowię czterema językami: Polski, Angielski, Ukraiński, Rosyjski</p>
+    </section>
+
+    <section>
+      <h2>Umiejętności</h2>
+      <ul id="dynamic-skills-list"></ul>
+    </section>
+
+    <section>
+      <h2>Doświadczenie</h2>
+      <article>
+        <h3>Realizacja projektów akademickich</h3>
+        <p>Tworzenie aplikacji konsolowych oraz prostych baz danych w ramach zajęć na uczelni</p>
+      </article>
+      <article>
+        <h3>Samokształcenie w zakresie IT</h3>
+        <p>Aktywne poszerzanie wiedzy z zakresu programowania</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Edukacja</h2>
+      <ol>
+        <li>09.2014-05.2018 - Szkoła Podstawowa Nr 5, Makeevka</li>
+        <li>09.2018-05.2021 - Liceum Nr 2, Makeevka</li>
+        <li>09.2021-05.2025 - Prywatne Liceum „Schodżenija”, Odessa </li>
+        <li>10.2025-obecnie - Akademia Finansów i Biznesu Vistula, Warszawa</li>
+      </ol>
+    </section>
+
+    <section id="projects-section">
+      <h2>Projekty</h2>
+      <ul id="dynamic-projects-list"></ul>
+    </section>
+    <section id="local-storage-section">
+      <h2>Zarządzanie Projektami</h2>
+      <div class="form-group">
+        <label for="new-project-input">Dodaj nowy projekt:</label>
+        <input type="text" id="new-project-input" placeholder="Wpisz nazwę...">
+        <button onclick="addNewProject()" class="submit-btn" style="margin-top: 10px;">Dodaj do listy</button>
+      </div>
+      <ul id="local-projects-list" style="margin-top: 20px;"></ul>
+    </section>
+    <section class="contact-section">
+      <h2>Napisz do mnie</h2>
+      <form id="contact-form" onsubmit="return validateForm(event)">
+        <div class="form-group">
+          <label for="name">Imię:</label><br>
+          <input type="text" id="name" name="name" required minlength="3">
+        </div>
+        <div class="form-group">
+          <label for="surname">Nazwisko:</label><br>
+          <input type="text" id="surname" name="surname" required minlength="3">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Wiadomość:</label><br>
+          <textarea id="message" name="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+      </form>
+      <p id="form-feedback"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p><b>Copyright (c) Salashnik Tymofii, 2026</b></p>
+  </footer>
+
+</body>
+</html>
